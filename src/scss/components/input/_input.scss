@@ -10,22 +10,11 @@
     }
   }
 
-  &--error {
-    .input__field {
-      border-color: #e64747;
-    }
-
-    .input__warning {
-      opacity: 1;
-      visibility: visible;
-    }
-  }
-
   &__field {
     width: 100%;
     padding: 20px 25px;
 
-    border: 1px solid $palette-black;
+    border: 1px solid $input-border-color;
     outline: none;
 
     background-color: transparent;
@@ -36,22 +25,5 @@
     &::placeholder {
       color: #353535;
     }
-  }
-
-  &__warning {
-    position: absolute;
-    top: 50%;
-    right: 15px;
-
-    width: 24px;
-    height: 24px;
-
-    opacity: 0;
-    visibility: hidden;
-
-    cursor: help;
-    transform: translateY(-50%);
-
-    transition: 0.2s ease;
   }
 }
