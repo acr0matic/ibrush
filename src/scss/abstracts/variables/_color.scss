@@ -1,8 +1,18 @@
 // Цветовая палитра блоков
 $palette-white: #ffffff;
-$palette-black: #000000;
+$palette-gray: #ededed;
+$palette-blue: #0062ff;
 
 // Цветовая палитра текста
-$color-text__primary: #000000;
-$color-text__black: #000000;
+$color-text__blue: #0062ff;
+$color-text__darkblue: #0035ff;
+$color-text__gray: #777777;
 $color-text__white: #ffffff;
+$color-text__black: (
+  "black": #000000,
+  "dark": #1a1a1a,
+  "regular": #202326,
+  "light": #222222,
+);
+
+$color-text__primary: map.get($color-text__black, "regular");
