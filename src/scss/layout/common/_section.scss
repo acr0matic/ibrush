@@ -35,6 +35,8 @@
     }
 
     color: map-get($color-text__black, "black");
+
+    font-weight: $weight-Regular;
     font-size: $font-size__title--small;
   }
 }

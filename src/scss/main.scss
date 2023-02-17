@@ -5,6 +5,7 @@
 
 // 0. Подключение первичных стилей
 @import "base/normalize";
+@import "base/reset";
 
 // 1. Импорт библиотек
 @import "vendors/main";
@@ -14,7 +15,6 @@
 
 // 3. Подключение основных стилей
 @import "base/settings";
-@import "base/reset";
 @import "base/base";
 @import "base/fonts";
 @import "base/typography";
