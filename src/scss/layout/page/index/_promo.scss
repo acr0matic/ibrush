@@ -1,0 +1,13 @@
+#promo {
+  padding: 36px 0;
+  background-color: $palette-gray;
+}
+
+.promo {
+  &__text {
+    margin-bottom: 16px;
+
+    font-size: $font-size__text--small;
+    font-family: Helvetica, sans-serif;
+  }
+}

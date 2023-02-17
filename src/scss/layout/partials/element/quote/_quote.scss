@@ -11,10 +11,12 @@
 
   &__body {
     padding-top: 10px;
+    font-size: $font-size__text--big;
 
     figcaption {
       margin-top: 24px;
       color: $color-text__gray;
+      font-size: $font-size__text--regular;
     }
   }
 }

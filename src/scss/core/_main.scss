@@ -8,7 +8,7 @@
 .container-fluid,
 .container-md,
 .container-sm {
-  --bs-gutter-x: 15px;
+  --bs-gutter-x: 0;
   --bs-gutter-y: 0;
   width: 100%;
   padding-right: calc(var(--bs-gutter-x) * 0.5);
