@@ -11,6 +11,7 @@
 
   &__body {
     padding-top: 10px;
+    color: map-get($color-text__black, "dark");
     font-size: $font-size__text--big;
 
     figcaption {

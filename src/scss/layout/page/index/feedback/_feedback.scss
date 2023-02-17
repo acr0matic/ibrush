@@ -1,0 +1,16 @@
+#feedback {
+  background-color: $palette-gray;
+}
+
+.feedback {
+  &__title {
+    margin-bottom: 16px;
+
+    font-weight: $weight-Bold;
+    font-size: $font-size__text--big;
+  }
+
+  &__rating {
+    margin-bottom: 30px;
+  }
+}

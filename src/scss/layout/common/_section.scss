@@ -1,13 +1,19 @@
 .section {
+  &--gray {
+    padding: 36px 0;
+    background-color: $palette-gray;
+  }
+
   &:not(:last-child) {
     margin-bottom: 45px;
   }
 
   &__header {
+    margin-bottom: 28px;
   }
 
   &__title {
+    color: map-get($color-text__black, "black");
     font-size: $font-size__title--small;
-    font-family: Consolas, sans-serif;
   }
 }

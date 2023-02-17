@@ -1,14 +1,25 @@
 .button {
+  display: inline-block;
+
+  padding: 14px 45px;
+
   border: none;
   border-radius: 2px;
   outline: none;
 
   background-color: transparent;
 
+  font-weight: $weight-Bold;
+  text-align: center;
+  text-transform: uppercase;
   white-space: nowrap;
-  cursor: pointer;
 
+  cursor: pointer;
   transition: all $transition ease;
+
+  &--block {
+    width: 100%;
+  }
 
   &:disabled {
     opacity: 0.5;

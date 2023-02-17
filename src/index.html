@@ -118,7 +118,7 @@
     <!-- /.container -->
   </section>
 
-  <section id="promo" class="section">
+  <section id="promo" class="section section--gray">
     <div class="container">
       <div class="promo">
         <div class="row justify-content-center">
@@ -136,6 +136,123 @@
     </div>
     <!-- /.container -->
   </section>
+
+  <section id="summary" class="section">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">
+          Заключение
+        </h2>
+      </div>
+      <!-- /.section__header -->
+
+      <div class="summary">
+        <p class="summary__text">
+          Синхрония осознаёт сюжетный верлибр. Мифопорождающее текстовое устройство диссонирует лирический субъект. Абстрактное высказывание пространственно просветляет деструктивный символ. Ямб, несмотря на то, что все эти характерологические черты отсылают не к единому образу нарратора, интегрирует мифопоэтический хронотоп. Действительно,
+          ударение приводит палимпсест. Контрапункт приводит ритм.
+        </p>
+      </div>
+      <!-- /.summary -->
+    </div>
+    <!-- /.container -->
+  </section>
+
+  <section id="feedback" class="section section--gray">
+    <div class="container">
+      <div class="feedback__rating">
+        <h3 class="feedback__title">
+          Оцените статью
+        </h3>
+
+        <form class="feedback-rating" action="">
+          <fieldset class="feedback-rating__group">
+            <label>
+              <input name="rating" type="radio">
+              <span></span>
+            </label>
+
+            <label>
+              <input name="rating" type="radio">
+              <span></span>
+            </label>
+
+            <label>
+              <input name="rating" type="radio">
+              <span></span>
+            </label>
+
+            <label>
+              <input name="rating" type="radio">
+              <span></span>
+            </label>
+
+            <label>
+              <input name="rating" type="radio">
+              <span></span>
+            </label>
+          </fieldset>
+        </form>
+      </div>
+      <!-- /.feedback-rating -->
+
+      <div class="feedback__message">
+        <h3 class="feedback__title">
+          Добавить комментарий к книге
+        </h3>
+
+        <form class="feedback-message" action="">
+          <div class="row">
+            <div class="col-4 mb-4">
+              <div class="input">
+                <input placeholder="Имя" autocomplete="off" type="text" name="user_name" class="input__field">
+                <label class="input__label">Имя</label>
+              </div>
+              <!-- /.input -->
+            </div>
+            <!-- /.col-4 -->
+
+            <div class="col-4 mb-4">
+              <div class="input">
+                <input placeholder="E-mail" autocomplete="off" type="email" name="user_email" class="input__field">
+                <label class="input__label">E-mail</label>
+              </div>
+              <!-- /.input -->
+            </div>
+            <!-- /.col-4 -->
+
+            <div class="col-4 mb-4">
+              <select class="select" name="book">
+                <option value="JavaScript ниндзя">JavaScript ниндзя</option>
+                <option value="Pragmatic Guide to JavaScript">Pragmatic Guide to JavaScript</option>
+                <option value="Pro JavaScript Techniques">Pro JavaScript Techniques</option>
+                <option value="Выразительный JavaScript">Выразительный JavaScript</option>
+              </select>
+            </div>
+            <!-- /.col-4 -->
+
+            <div class="col-12 mb-4">
+              <div class="input input--box">
+                <textarea placeholder="Ваш отзыв" autocomplete="off" type="text" name="user_message" class="input__field"></textarea>
+                <label class="input__label">Ваш отзыв</label>
+              </div>
+              <!-- /.input -->
+            </div>
+            <!-- /.col-12 -->
+
+            <div class="col-4">
+              <button class="button button--block button-primary">Отправить</button>
+            </div>
+            <!-- /.col-4 -->
+          </div>
+          <!-- /.row -->
+        </form>
+      </div>
+      <!-- /.feedback__message -->
+    </div>
+    <!-- /.section__header -->
+    </div>
+    <!-- /.container -->
+  </section>
 </main>
 
 <!-- Подвал -->
@@ -150,8 +267,7 @@
 
 <!-- Скрипты -->
 <!-- build:js js/script.min.js -->
-<script src="scripts/libraries/lazyload.js"></script>
-<script src="scripts/libraries/forms.js"></script>
+<script src="scripts/libraries/nice-select2.js"></script>
 
 <script src="scripts/base.js"></script>
 <script src="scripts/init.js"></script>

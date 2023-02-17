@@ -1,10 +1,10 @@
-const lazyLoadInstance = new LazyLoad({
-  elements_selector: '.lazy__item',
+const feedback = document.getElementById('feedback');
 
-  callback_loaded: (trigger) => {
-    const container = trigger.closest('.lazy');
-    const loader = container.querySelector('.preloader');
-
-    if (loader) loader.classList.add('preloader--hide');
-  },
-});
+if (feedback) {
+  const select = feedback.querySelector('.select');
+  NiceSelect.bind(select,
+    {
+      placeholder: 'Выберите книгу',
+    }
+  );
+}
