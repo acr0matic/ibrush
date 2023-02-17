@@ -5,3 +5,9 @@
 .disable-scroll {
   overflow: hidden;
 }
+
+.container {
+  @include breakpoint($breakpoint-mobile--large) {
+    padding: 0 20px !important;
+  }
+}

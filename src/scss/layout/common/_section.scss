@@ -5,18 +5,35 @@
   }
 
   &:not(:last-child) {
+    @include breakpoint($breakpoint-mobile--large) {
+      margin-bottom: 36px;
+    }
+
     margin-bottom: 45px;
   }
 
   &:last-child {
+    @include breakpoint($breakpoint-mobile--large) {
+      margin-bottom: 65px;
+    }
+
     margin-bottom: 75px;
   }
 
   &__header {
+    @include breakpoint($breakpoint-mobile--large) {
+      margin-bottom: 20px;
+    }
+
     margin-bottom: 28px;
   }
 
   &__title {
+    @include breakpoint($breakpoint-mobile--large) {
+      font-weight: $weight-Bold;
+      font-size: $font-size__text--big + 5px;
+    }
+
     color: map-get($color-text__black, "black");
     font-size: $font-size__title--small;
   }

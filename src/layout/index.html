@@ -13,7 +13,11 @@
         <!-- /.hero_header -->
 
         <figure class="hero__banner">
-          <img class="image image--cover" src="img/layout/page/index/hero/banner.jpg" alt="">
+          <div class="hero__overflow custom-scrollbar">
+            <img class="image image--cover" src="img/layout/page/index/hero/banner.jpg" alt="">
+          </div>
+          <!-- /.hero__overflow -->
+
           <figcaption class="hero__label">Можно выделить три основных направления для прогресса JavaScript</figcaption>
         </figure>
         <!-- /.hero__banner -->
@@ -50,7 +54,7 @@
     <div class="container">
       <div class="promo">
         <div class="row justify-content-center">
-          <div class="col-10">
+          <div class="col-sm-10">
             <p class="promo__text">Реклама на <a href="" target="_blank">blabla.com</a></p>
             <picture class="promo__banner">
               <img class="image image--cover" src="img/layout/page/index/promo/banner.jpg" alt="">
@@ -116,7 +120,7 @@
           </h3>
 
           <div class="row">
-            <div class="col-4 mb-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="input">
                 <input placeholder="Имя" autocomplete="off" type="text" name="user_name" class="input__field">
                 <label class="input__label">Имя</label>
@@ -125,7 +129,7 @@
             </div>
             <!-- /.col-4 -->
 
-            <div class="col-4 mb-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="input">
                 <input placeholder="E-mail" autocomplete="off" type="email" name="user_email" class="input__field">
                 <label class="input__label">E-mail</label>
@@ -134,7 +138,7 @@
             </div>
             <!-- /.col-4 -->
 
-            <div class="col-4 mb-4">
+            <div class="col-sm-12 col-md-4 mb-4">
               <select class="select" name="book">
                 <option value="JavaScript ниндзя">JavaScript ниндзя</option>
                 <option value="Pragmatic Guide to JavaScript">Pragmatic Guide to JavaScript</option>
@@ -153,7 +157,7 @@
             </div>
             <!-- /.col-12 -->
 
-            <div class="col-4">
+            <div class="col-12 col-sm-6 col-md-4">
               <button class="button button--block button-primary">Отправить</button>
             </div>
             <!-- /.col-4 -->

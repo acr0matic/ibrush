@@ -6,15 +6,27 @@
   font-family: OpenSans, sans-serif;
 
   &__icon {
+    @include breakpoint($breakpoint-mobile--large) {
+      margin-right: 20px;
+    }
+
     margin-right: 24px;
   }
 
   &__body {
+    @include breakpoint($breakpoint-mobile--large) {
+      font-size: $font-size__text--small;
+    }
+
     padding-top: 10px;
     color: map-get($color-text__black, "dark");
     font-size: $font-size__text--big;
 
     figcaption {
+      @include breakpoint($breakpoint-mobile--large) {
+        font-size: $font-size__text--small;
+      }
+
       margin-top: 24px;
       color: $color-text__gray;
       font-size: $font-size__text--regular;

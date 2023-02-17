@@ -3,15 +3,27 @@
 // -----------------------------------------------------------------------------
 
 #hero {
+  @include breakpoint($breakpoint-mobile--large) {
+    padding-top: 40px;
+  }
+
   padding-top: 80px;
 }
 
 .hero {
   &__header {
+    @include breakpoint($breakpoint-mobile--large) {
+      margin-bottom: 40px;
+    }
+
     margin-bottom: 64px;
   }
 
   &__title {
+    @include breakpoint($breakpoint-mobile--large) {
+      font-size: $font-size__text--big + 5px;
+    }
+
     color: $palette-blue;
 
     font-weight: $weight-Bold;
@@ -20,6 +32,12 @@
   }
 
   &__banner {
+    @include breakpoint($breakpoint-mobile--large) {
+      flex-direction: column-reverse;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+
     display: flex;
     flex-direction: column;
 
@@ -27,11 +45,37 @@
     border-bottom: 1px solid #dcdcdc;
   }
 
+  &__overflow {
+    @include breakpoint($breakpoint-mobile--large) {
+      padding-bottom: 16px;
+    }
+
+    overflow: auto;
+    padding-bottom: 0;
+
+    img {
+      @include breakpoint($breakpoint-mobile--large) {
+        width: auto;
+        max-inline-size: initial;
+        max-block-size: initial;
+      }
+    }
+  }
+
   &__label {
+    @include breakpoint($breakpoint-mobile--large) {
+      margin-top: 0;
+      margin-bottom: 26px;
+    }
+
     margin-top: 20px;
   }
 
   &__content {
+    @include breakpoint($breakpoint-mobile--large) {
+      padding-top: 34px;
+    }
+
     padding-top: 55px;
 
     .section__title {

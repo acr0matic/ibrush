@@ -10,11 +10,21 @@ if (feedback) {
 }
 
 const sliderOffer = new Swiper('.slider-related', {
-  slidesPerView: 3,
+  slidesPerView: 1,
   spaceBetween: 24,
 
   pagination: {
-    el: '#slider-offer .swiper-pagination',
+    el: '.slider-related .swiper-pagination',
     clickable: true,
   },
+
+  breakpoints: {
+    480: {
+      slidesPerView: 2,
+    },
+
+    768: {
+      slidesPerView: 3,
+    }
+  }
 });
