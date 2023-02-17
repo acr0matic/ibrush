@@ -1,0 +1,20 @@
+.quote {
+  display: flex;
+  align-items: flex-start;
+
+  font-style: italic;
+  font-family: OpenSans, sans-serif;
+
+  &__icon {
+    margin-right: 24px;
+  }
+
+  &__body {
+    padding-top: 10px;
+
+    figcaption {
+      margin-top: 24px;
+      color: $color-text__gray;
+    }
+  }
+}

@@ -1,9 +1,9 @@
 .section {
   &__header {
-
   }
 
   &__title {
-
+    font-size: $font-size__title--small;
+    font-family: Consolas, sans-serif;
   }
 }

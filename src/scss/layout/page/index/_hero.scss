@@ -1,0 +1,41 @@
+// -----------------------------------------------------------------------------
+// Фрагмент стилизации какой-то секции
+// -----------------------------------------------------------------------------
+
+#hero {
+  padding-top: 80px;
+}
+
+.hero {
+  &__header {
+    margin-bottom: 64px;
+  }
+
+  &__title {
+    color: $palette-blue;
+
+    font-weight: $weight-Bold;
+    font-size: $font-size__title--medium;
+    font-family: Consolas, sans-serif;
+  }
+
+  &__banner {
+    display: flex;
+    flex-direction: column;
+
+    padding-bottom: 50px;
+    border-bottom: 1px solid #dcdcdc;
+  }
+
+  &__label {
+    margin-top: 20px;
+  }
+
+  &__content {
+    padding-top: 55px;
+
+    .section__title {
+      margin-bottom: 20px;
+    }
+  }
+}
