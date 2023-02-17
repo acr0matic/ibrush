@@ -87,48 +87,34 @@
 
   <section id="feedback" class="section section--gray">
     <div class="container">
-      <div class="feedback__rating">
-        <h3 class="feedback__title">
-          Оцените статью
-        </h3>
+      <form class="form feedback-message" action="">
+        <div class="feedback__rating">
+          <h3 class="feedback__title">
+            Оцените статью
+          </h3>
 
-        <form class="feedback-rating" action="">
-          <fieldset class="feedback-rating__group">
-            <label>
-              <input name="rating" type="radio">
-              <span></span>
-            </label>
+          <div class="feedback-rating">
+            <fieldset class="feedback-rating__group">
+              <input type="radio" id="rating-1" name="rating" value="1" />
+              <label for="rating-1"></label>
+              <input type="radio" id="rating-2" name="rating" value="2" />
+              <label for="rating-2"></label>
+              <input type="radio" id="rating-3" name="rating" value="3" />
+              <label for="rating-3"></label>
+              <input type="radio" id="rating-4" name="rating" value="4" />
+              <label for="rating-4"></label>
+              <input type="radio" id="rating-5" name="rating" value="5" />
+              <label for="rating-5"></label>
+            </fieldset>
+          </div>
+        </div>
+        <!-- /.feedback-rating -->
 
-            <label>
-              <input name="rating" type="radio">
-              <span></span>
-            </label>
+        <div class="feedback__message">
+          <h3 class="feedback__title">
+            Добавить комментарий к книге
+          </h3>
 
-            <label>
-              <input name="rating" type="radio">
-              <span></span>
-            </label>
-
-            <label>
-              <input name="rating" type="radio">
-              <span></span>
-            </label>
-
-            <label>
-              <input name="rating" type="radio">
-              <span></span>
-            </label>
-          </fieldset>
-        </form>
-      </div>
-      <!-- /.feedback-rating -->
-
-      <div class="feedback__message">
-        <h3 class="feedback__title">
-          Добавить комментарий к книге
-        </h3>
-
-        <form class="feedback-message" action="">
           <div class="row">
             <div class="col-4 mb-4">
               <div class="input">
@@ -173,11 +159,9 @@
             <!-- /.col-4 -->
           </div>
           <!-- /.row -->
-        </form>
-      </div>
-      <!-- /.feedback__message -->
-    </div>
-    <!-- /.section__header -->
+        </div>
+        <!-- /.feedback__message -->
+      </form>
     </div>
     <!-- /.container -->
   </section>

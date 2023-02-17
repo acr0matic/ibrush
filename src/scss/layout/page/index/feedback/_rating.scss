@@ -1,7 +1,37 @@
 .feedback-rating {
   &__group {
-    span {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;
 
+    padding: 0;
+
+    & > input {
+      display: none;
+
+      &:checked ~ label,
+      & + label:hover ~ label,
+      & + label:hover {
+        background-image: url("../img/icons/control/star--filled.svg");
+      }
+    }
+
+    label {
+      display: block;
+      width: 25px;
+      height: 25px;
+
+      background-image: url("../img/icons/control/star.svg");
+      background-size: 100%;
+      background-repeat: no-repeat;
+
+      cursor: pointer;
+      transition: $transition ease;
+
+      &:not(:first-child) {
+        margin-right: 10px;
+      }
     }
   }
 }
