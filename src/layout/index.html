@@ -181,6 +181,53 @@
     </div>
     <!-- /.container -->
   </section>
+
+  <section id="related" class="section">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">
+          Похожие посты
+        </h2>
+      </div>
+      <!-- /.section__header -->
+
+      <div class="related">
+        <div class="swiper slider-related">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              @@include('layout/template/card/related.html', {
+              "image": "img/content/post/1.jpg",
+              "title": "События жизненного цикла ReactJS"
+              })
+            </div>
+            <!-- /.swiper-slide -->
+
+            <div class="swiper-slide">
+              @@include('layout/template/card/related.html', {
+              "image": "img/content/post/2.jpg",
+              "title": "CSS Grids. Полное руководство"
+              })
+            </div>
+            <!-- /.swiper-slide -->
+
+            <div class="swiper-slide">
+              @@include('layout/template/card/related.html', {
+              "image": "img/content/post/3.jpg",
+              "title": "Асинхронность в JavaScript"
+              })
+            </div>
+            <!-- /.swiper-slide -->
+          </div>
+          <!-- /.swiper-wrapper -->
+
+          <div class="swiper-pagination"></div>
+        </div>
+        <!-- /.swiper -->
+      </div>
+      <!-- /.related -->
+    </div>
+    <!-- /.container -->
+  </section>
 </main>
 
 @@include('layout/partials/footer.html')

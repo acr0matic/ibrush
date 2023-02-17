@@ -1,4 +1,10 @@
 .button-primary {
   background-color: $palette-blue;
   color: $color-text__white;
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: lighten($color: $palette-blue, $amount: 10);
+    }
+  }
 }

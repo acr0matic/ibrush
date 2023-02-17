@@ -1,0 +1,29 @@
+.swiper {
+  &-wrapper {
+    box-sizing: border-box;
+  }
+
+  &-pagination {
+    position: static;
+    display: block;
+
+    margin-top: 20px;
+
+    &-bullet {
+      width: 10px;
+      height: 10px;
+
+      margin: 0 10px !important;
+
+      background-color: #cccccc;
+      opacity: 1;
+
+      transition: $transition ease;
+    }
+
+    &-bullet-active {
+      background-color: #0062ff;
+      transform: scale(1.5);
+    }
+  }
+}

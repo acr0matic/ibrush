@@ -8,3 +8,13 @@ if (feedback) {
     }
   );
 }
+
+const sliderOffer = new Swiper('.slider-related', {
+  slidesPerView: 3,
+  spaceBetween: 24,
+
+  pagination: {
+    el: '#slider-offer .swiper-pagination',
+    clickable: true,
+  },
+});
